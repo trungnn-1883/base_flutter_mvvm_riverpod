@@ -2,6 +2,11 @@ import 'dart:io';
 
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_mvvm_riverpod/base/common/ui/widgets/common_dialog.dart';
+import 'package:flutter_mvvm_riverpod/base/utils/global_loading.dart';
+import 'package:flutter_mvvm_riverpod/extensions/profile_extension.dart';
+import 'package:flutter_mvvm_riverpod/features/profile/view_model/profile_view_model.dart';
+import 'package:flutter_mvvm_riverpod/model/profile.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:hugeicons/hugeicons.dart';
@@ -10,15 +15,10 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 
 import '/constants/constants.dart';
 import '/extensions/build_context_extension.dart';
-import '/extensions/profile_extension.dart';
 import '/generated/locale_keys.g.dart';
 import '/routing/routes.dart';
 import '/theme/app_colors.dart';
 import '/theme/app_theme.dart';
-import '/utils/global_loading.dart';
-import '../../../../features/common/ui/widgets/common_dialog.dart';
-import '../model/profile.dart';
-import 'view_model/profile_view_model.dart';
 import 'widgets/avatar.dart';
 import 'widgets/premium_info.dart';
 import 'widgets/profile_item.dart';
@@ -89,7 +89,7 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
                 ),
                 Transform.translate(
                   offset: Offset(0, -32),
-                  child: profile.isPremium
+                  child: profile!.isPremium
                       ? PremiumInfo(expiryDate: profile?.expiryDatePremium)
                       : UpgradePremiumButton(),
                 ),
@@ -128,7 +128,7 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
             text: LocaleKeys.language.tr(),
             isLast: true,
             onTap: () {
-              context.push(Routes.languages);
+              context.push(Routes.example);
             },
           ),
           const SizedBox(height: 24),
@@ -233,7 +233,8 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
             }
           } catch (error) {
             if (context.mounted) {
-              context.showErrorSnackBar(LocaleKeys.unexpectedErrorOccurred.tr());
+              context
+                  .showErrorSnackBar(LocaleKeys.unexpectedErrorOccurred.tr());
             }
           } finally {
             if (context.mounted) {
@@ -265,7 +266,8 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
             }
           } catch (error) {
             if (context.mounted) {
-              context.showErrorSnackBar(LocaleKeys.unexpectedErrorOccurred.tr());
+              context
+                  .showErrorSnackBar(LocaleKeys.unexpectedErrorOccurred.tr());
             }
           } finally {
             if (context.mounted) {

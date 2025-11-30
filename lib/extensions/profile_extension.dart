@@ -1,4 +1,4 @@
-import '../../features/profile/model/profile.dart';
+import '../model/profile.dart';
 
 extension ProfileExtension on Profile? {
   bool get isPremium {

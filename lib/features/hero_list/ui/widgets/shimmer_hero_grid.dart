@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_mvvm_riverpod/base/common/ui/widgets/common_shimmer.dart';
 
 import '/theme/app_colors.dart';
-import '../../../common/ui/widgets/common_shimmer.dart';
 
 class ShimmerHeroGrid extends StatelessWidget {
   const ShimmerHeroGrid({super.key});

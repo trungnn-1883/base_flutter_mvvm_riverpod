@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_mvvm_riverpod/base/common/ui/widgets/material_ink_well.dart';
 import 'package:hugeicons/hugeicons.dart';
 
 import '/extensions/build_context_extension.dart';
 import '/theme/app_theme.dart';
-import '../../../common/ui/widgets/material_ink_well.dart';
 import 'common_rounded_item.dart';
 
 class ProfileItem extends StatelessWidget {

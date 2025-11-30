@@ -11,4 +11,6 @@ class Routes {
   static const appearances = '/appearances';
   static const languages = '/languages';
   static const premium = '/premium';
+  static const example = '/example';
+  static const home = "/home";
 }

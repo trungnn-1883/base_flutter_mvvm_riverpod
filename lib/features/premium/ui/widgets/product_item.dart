@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_mvvm_riverpod/base/common/ui/widgets/material_ink_well.dart';
 
 import '/theme/app_colors.dart';
 import '/theme/app_theme.dart';
-import '../../../common/ui/widgets/material_ink_well.dart';
-import '../../model/product.dart';
+import '../../../../model/product.dart';
 
 class ProductItem extends StatelessWidget {
   final Product product;

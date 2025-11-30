@@ -2,13 +2,13 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 part 'authentication_state.freezed.dart';
-
 part 'authentication_state.g.dart';
 
 @freezed
 abstract class AuthenticationState with _$AuthenticationState {
   const factory AuthenticationState({
-    @JsonKey(toJson: _authResponseToJson, fromJson: _authResponseFromJson) AuthResponse? authResponse,
+    @JsonKey(toJson: _authResponseToJson, fromJson: _authResponseFromJson)
+    AuthResponse? authResponse,
     @Default(false) bool isRegisterSuccessfully,
     @Default(false) bool isSignInSuccessfully,
   }) = _AuthenticationState;
