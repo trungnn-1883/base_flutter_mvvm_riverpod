@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_mvvm_riverpod/features/home/view/home_view.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:hugeicons/hugeicons.dart';
 import 'package:ming_cute_icons/ming_cute_icons.dart';
@@ -12,7 +13,7 @@ import '../../hero_list/ui/view_model/hero_count_provider.dart';
 import '../../hero_list/ui/view_model/hero_list_view_model.dart';
 
 const List<Widget> _screens = [
-  HeroListScreen(),
+  HomeView(),
   HeroListScreen(),
   ProfileScreen(),
 ];

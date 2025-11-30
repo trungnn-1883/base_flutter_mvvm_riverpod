@@ -1,10 +1,10 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_mvvm_riverpod/base/common/ui/widgets/common_header.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '/extensions/build_context_extension.dart';
-import '../../common/ui/widgets/common_header.dart';
-import '../model/language.dart';
+import '../../../model/language.dart';
 import 'widgets/language_item.dart';
 
 final languages = [

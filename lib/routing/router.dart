@@ -1,17 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_mvvm_riverpod/features/example/ui/views/example_view.dart';
+import 'package:flutter_mvvm_riverpod/features/home/view/home_view.dart';
 import 'package:go_router/go_router.dart';
 
 import '../features/authentication/ui/otp_screen.dart';
-import '../features/authentication/ui/sign_in_screen.dart';
 import '../features/authentication/ui/register_screen.dart';
+import '../features/authentication/ui/sign_in_screen.dart';
 import '../features/main/ui/main_screen.dart';
 import '../features/onboarding/ui/onboarding_screen.dart';
 import '../features/onboarding/ui/splash_screen.dart';
 import '../features/premium/ui/premium_screen.dart';
-import '../features/profile/model/profile.dart';
 import '../features/profile/ui/account_info_screen.dart';
 import '../features/profile/ui/appearances_screen.dart';
 import '../features/profile/ui/languages_screen.dart';
+import '../model/profile.dart';
 import 'routes.dart';
 
 enum SlideDirection {
@@ -130,5 +132,18 @@ final GoRouter router = GoRouter(
         direction: SlideDirection.up,
       ),
     ),
+    GoRoute(
+      path: Routes.example,
+      pageBuilder: (context, state) => state.slidePage(
+        const ExampleView(),
+        direction: SlideDirection.up,
+      ),
+    ),
+    GoRoute(
+      path: Routes.home,
+      pageBuilder: (context, state) => state.slidePage(
+        const HomeView(),
+      ),
+    )
   ],
 );

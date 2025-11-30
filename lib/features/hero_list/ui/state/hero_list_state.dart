@@ -1,6 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-import '../../model/hero.dart';
+import '../../../../model/hero.dart';
 
 part 'hero_list_state.freezed.dart';
 part 'hero_list_state.g.dart';

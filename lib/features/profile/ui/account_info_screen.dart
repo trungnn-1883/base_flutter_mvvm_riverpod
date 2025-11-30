@@ -1,20 +1,20 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_mvvm_riverpod/base/common/ui/widgets/common_header.dart';
+import 'package:flutter_mvvm_riverpod/base/common/ui/widgets/common_text_form_field.dart';
+import 'package:flutter_mvvm_riverpod/base/common/ui/widgets/primary_button.dart';
+import 'package:flutter_mvvm_riverpod/base/common/ui/widgets/secondary_button.dart';
+import 'package:flutter_mvvm_riverpod/features/profile/view_model/profile_view_model.dart';
+import 'package:flutter_mvvm_riverpod/model/profile.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 import '../../../extensions/build_context_extension.dart';
-import '../../../generated/locale_keys.g.dart';
 import '../../../extensions/string_extension.dart';
+import '../../../generated/locale_keys.g.dart';
 import '../../../theme/app_theme.dart';
-import '../../../utils/global_loading.dart';
-import '../../common/ui/widgets/common_header.dart';
-import '../../common/ui/widgets/common_text_form_field.dart';
-import '../../common/ui/widgets/primary_button.dart';
-import '../../common/ui/widgets/secondary_button.dart';
-import '../model/profile.dart';
-import 'view_model/profile_view_model.dart';
+import 'package:flutter_mvvm_riverpod/base/utils/global_loading.dart';
 import 'widgets/avatar.dart';
 
 class AccountInfoScreen extends ConsumerStatefulWidget {
@@ -128,8 +128,8 @@ class _AccountInfoScreenState extends ConsumerState<AccountInfoScreen> {
                   }
                 } catch (error) {
                   if (context.mounted) {
-                    context
-                        .showErrorSnackBar(LocaleKeys.unexpectedErrorOccurred.tr());
+                    context.showErrorSnackBar(
+                        LocaleKeys.unexpectedErrorOccurred.tr());
                   }
                 } finally {
                   Global.hideLoading();

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_mvvm_riverpod/base/common/ui/providers/app_theme_mode_provider.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../../extensions/build_context_extension.dart';
-import '../../../../features/common/ui/providers/app_theme_mode_provider.dart';
 import '../../../../features/profile/ui/widgets/common_rounded_item.dart';
 import '../../../../theme/app_colors.dart';
 import '../../../../theme/app_theme.dart';
@@ -62,7 +62,7 @@ class AppearanceItem extends ConsumerWidget {
                 ref.read(appThemeModeProvider.notifier).updateMode(value);
               },
               fillColor: WidgetStateProperty.resolveWith(
-                    (states) => states.contains(WidgetState.selected)
+                (states) => states.contains(WidgetState.selected)
                     ? AppColors.blueberry100
                     : context.secondaryTextColor,
               ),

@@ -9,13 +9,13 @@ import 'package:purchases_flutter/purchases_flutter.dart';
 // import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
+import 'base/common/ui/providers/app_theme_mode_provider.dart';
+import 'base/common/ui/widgets/offline_container.dart';
+import 'base/utils/provider_observer.dart';
 import 'constants/constants.dart';
 import 'environment/env.dart';
 import 'extensions/build_context_extension.dart';
-import 'features/common/ui/providers/app_theme_mode_provider.dart';
-import 'features/common/ui/widgets/offline_container.dart';
 import 'routing/router.dart';
-import 'utils/provider_observer.dart';
 
 Future<void> initPlatformState() async {
   try {

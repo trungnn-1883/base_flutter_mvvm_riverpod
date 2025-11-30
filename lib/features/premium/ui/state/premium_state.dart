@@ -1,7 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:purchases_flutter/purchases_flutter.dart';
 
-import '../../model/product.dart';
+import '../../../../model/product.dart';
 
 part 'premium_state.freezed.dart';
 

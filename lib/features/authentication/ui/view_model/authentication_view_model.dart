@@ -1,12 +1,12 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_mvvm_riverpod/constants/constants.dart';
+import 'package:flutter_mvvm_riverpod/features/profile/view_model/profile_view_model.dart';
+import 'package:flutter_mvvm_riverpod/generated/locale_keys.g.dart';
+import 'package:flutter_mvvm_riverpod/network/remote/repository/repository_impl/authentication_repository.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
-import '../../../../constants/constants.dart';
-import '../../../../features/profile/ui/view_model/profile_view_model.dart';
-import '../../../../generated/locale_keys.g.dart';
-import '../../repository/authentication_repository.dart';
 import '../../ui/state/authentication_state.dart';
 
 part 'authentication_view_model.g.dart';
@@ -86,7 +86,8 @@ class AuthenticationViewModel extends _$AuthenticationViewModel {
     debugPrint(
         '${Constants.tag} [AuthenticationViewModel.handleResult] authResponse: ${authResponse?.user?.toJson()}');
     if (authResponse == null) {
-      state = AsyncError(LocaleKeys.unexpectedErrorOccurred.tr(), StackTrace.current);
+      state = AsyncError(
+          LocaleKeys.unexpectedErrorOccurred.tr(), StackTrace.current);
       return;
     }
 
@@ -119,9 +120,9 @@ class AuthenticationViewModel extends _$AuthenticationViewModel {
       avatar = metaData['avatar_url'];
     }
     ref.read(profileViewModelProvider.notifier).updateProfile(
-      email: user.email,
-      name: name,
-      avatar: avatar,
-    );
+          email: user.email,
+          name: name,
+          avatar: avatar,
+        );
   }
 }

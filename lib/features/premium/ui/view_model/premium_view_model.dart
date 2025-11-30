@@ -1,5 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_mvvm_riverpod/features/profile/view_model/profile_view_model.dart';
 import 'package:hugeicons/hugeicons.dart';
 import 'package:purchases_flutter/purchases_flutter.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
@@ -7,9 +8,8 @@ import 'package:riverpod_annotation/riverpod_annotation.dart';
 import '/constants/constants.dart';
 import '/generated/locale_keys.g.dart';
 import '/theme/app_colors.dart';
-import '../../../profile/ui/view_model/profile_view_model.dart';
-import '../../model/benefit.dart';
-import '../../model/product.dart';
+import '../../../../model/benefit.dart';
+import '../../../../model/product.dart';
 import '../state/premium_state.dart';
 
 part 'premium_view_model.g.dart';
@@ -111,7 +111,8 @@ class PremiumViewModel extends _$PremiumViewModel {
     try {
       final currentState = state.value!;
       if (currentState.availablePackages == null) {
-        state = AsyncError(LocaleKeys.fetchOfferingsError.tr(), StackTrace.current);
+        state =
+            AsyncError(LocaleKeys.fetchOfferingsError.tr(), StackTrace.current);
         return;
       }
 
@@ -122,7 +123,8 @@ class PremiumViewModel extends _$PremiumViewModel {
       );
 
       if (revenueCatPackage == null) {
-        state = AsyncError(LocaleKeys.packageNotFoundError.tr(), StackTrace.current);
+        state = AsyncError(
+            LocaleKeys.packageNotFoundError.tr(), StackTrace.current);
         return;
       }
 
@@ -150,7 +152,8 @@ class PremiumViewModel extends _$PremiumViewModel {
         isRestoreSuccessfully: customerInfo.entitlements.active.isNotEmpty,
       ));
     } catch (error) {
-      state = AsyncError(LocaleKeys.restorePurchasesError.tr(), StackTrace.current);
+      state =
+          AsyncError(LocaleKeys.restorePurchasesError.tr(), StackTrace.current);
       rethrow;
     }
   }
