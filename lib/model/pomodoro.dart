@@ -1,3 +1,5 @@
+enum PomodoroType { focus, shortBreak, longBreak }
+
 class Pomodoro {
   final int focusDuration; // in minutes
   final int shortBreakDuration; // in minutes
@@ -5,9 +7,7 @@ class Pomodoro {
 
   final int numberOfCycles;
 
-  bool isInFocus;
-  bool isInShortBreak;
-  bool isInLongBreak;
+  PomodoroType pomodoroType;
 
   int completedCycles;
 
@@ -16,30 +16,22 @@ class Pomodoro {
     required this.shortBreakDuration,
     required this.longBreakDuration,
     required this.numberOfCycles,
-    this.isInFocus = true,
-    this.isInShortBreak = false,
-    this.isInLongBreak = false,
+    this.pomodoroType = PomodoroType.focus,
     this.completedCycles = 0,
   });
 
   void startFocus() {
     // Logic to start focus session
-    isInFocus = true;
-    isInShortBreak = false;
-    isInLongBreak = false;
+    this.pomodoroType = PomodoroType.focus;
   }
 
   void startShortBreak() {
     // Logic to start short break
-    isInFocus = false;
-    isInShortBreak = true;
-    isInLongBreak = false;
+    this.pomodoroType = PomodoroType.shortBreak;
   }
 
   void startLongBreak() {
     // Logic to start long break
-    isInFocus = false;
-    isInShortBreak = false;
-    isInLongBreak = true;
+    this.pomodoroType = PomodoroType.longBreak;
   }
 }
