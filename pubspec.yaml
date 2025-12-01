@@ -78,7 +78,16 @@ dependencies:
 
   # gap:
   gap: ^3.0.1
+
+  # timers and progress indicators
   circular_countdown_timer: ^0.2.4
+  step_progress: ^2.7.1
+
+  # play sound
+  audioplayers: ^5.2.0
+
+  # flutter gen
+  flutter_gen_runner: ^5.3.0
 
 dev_dependencies:
   build_runner: ^2.4.13
@@ -93,6 +102,8 @@ dev_dependencies:
   riverpod_generator: ^2.6.4
   riverpod_lint: ^2.6.4
   test: ^1.25.8
+  flutter_gen_runner: ^5.3.0
+
 
   # retrofit
   retrofit_generator: ^9.7.0
@@ -101,6 +112,21 @@ dev_dependencies:
 # following page: https://dart.dev/tools/pub/pubspec
 
 # The following section is specific to Flutter packages.
+flutter_gen:
+  output: lib/gen/ # Optional (default: lib/gen/)
+  # line_length: 80 # Optional
+
+  # Optional
+  integrations:
+    image: true
+    flutter_svg: true
+    rive: true
+    lottie: true
+
+  assets:
+    enabled: true
+
+
 flutter:
 
   # The following line ensures that the Material Icons font is
@@ -113,6 +139,7 @@ flutter:
     - assets/google_fonts/
     - assets/images/
     - assets/translations/
+    - assets/sounds/
 
   # To add assets to your application, add an assets section, like this:
   # assets:

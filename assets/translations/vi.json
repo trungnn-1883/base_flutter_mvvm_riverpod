@@ -97,5 +97,9 @@
   "purchaseError": "Mua hàng thất bại",
   "restorePurchasesSuccess": "Đã khôi phục thành công các gói đã mua",
   "noActivePurchases": "Không tìm thấy gói đã mua",
-  "restorePurchasesError": "Không thể khôi phục các gói đã mua"
+  "restorePurchasesError": "Không thể khôi phục các gói đã mua",
+
+  "pomodoroStepFocus": "Tập trung",
+  "pomodoroStepShortBreak": "Nghỉ ngắn",
+  "pomodoroStepLongBreak": "Nghỉ dài"
 }

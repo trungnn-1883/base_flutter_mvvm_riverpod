@@ -97,5 +97,9 @@
   "purchaseError": "Purchase failed",
   "restorePurchasesSuccess": "Your purchases have been restored successfully",
   "noActivePurchases": "No active purchases found",
-  "restorePurchasesError": "Failed to restore purchases"
+  "restorePurchasesError": "Failed to restore purchases",
+
+  "pomodoroStepFocus": "In focus",
+  "pomodoroStepShortBreak": "Short break",
+  "pomodoroStepLongBreak": "Long break"
 }
