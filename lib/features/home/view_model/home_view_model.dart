@@ -1,9 +1,10 @@
-import 'dart:math';
-
 import 'package:audioplayers/audioplayers.dart';
 import 'package:circular_countdown_timer/circular_countdown_timer.dart';
+import 'package:flutter_mvvm_riverpod/data/local/app_share_pref.dart';
+import 'package:flutter_mvvm_riverpod/data/repository/home_repository.dart';
+import 'package:flutter_mvvm_riverpod/data/repository/repository_impl/home_repository_impl.dart';
 import 'package:flutter_mvvm_riverpod/features/home/view/home_ui_state.dart';
-import 'package:flutter_mvvm_riverpod/model/Pomodoro.dart';
+import 'package:flutter_mvvm_riverpod/model/pomodoro.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:step_progress/step_progress.dart';
 
@@ -20,6 +21,10 @@ class HomeViewModel extends _$HomeViewModel {
       StepProgressController(totalSteps: 4);
 
   bool isAutoAdvanceNext = true; // auto start next session flag
+
+  late final HomeRepository homeRepository;
+
+  late final AppSharePref appSharePref;
 
   final player = AudioPlayer();
 
@@ -41,16 +46,16 @@ class HomeViewModel extends _$HomeViewModel {
     // Initial data loading logic can be placed here
 
     stepProgressController.setCurrentStep(0);
+    homeRepository = ref.read(homeRepositoryProvider);
+
+    final userName = await homeRepository.fetchUserName();
+    final quote = await homeRepository.fetchRandomQuote();
+    final pomodoro = await homeRepository.fetchPomodoro();
+    // TODO: update isAutoAdvanceNext based on saved user preference
     return HomeUiState(
-      userName: "Iron man",
-      quote: getRandomQuote(),
-      pomodoro: Pomodoro(
-        focusDuration: 25,
-        shortBreakDuration: 5,
-        longBreakDuration: 15,
-        numberOfCycles: 4,
-        pomodoroType: PomodoroType.shortBreak,
-      ),
+      userName: userName,
+      quote: quote,
+      pomodoro: pomodoro,
       timerStatus: TimerStatus.initial,
     );
   }
@@ -95,48 +100,22 @@ class HomeViewModel extends _$HomeViewModel {
     state = AsyncData(newState);
   }
 
-  /// Returns a random quote from a predefined list.
-  String getRandomQuote() {
-    const quotes = [
-      "Whatever you are, be a good one.",
-      "The best way to get started is to quit talking and begin doing.",
-      "Success is not in what you have, but who you are.",
-      "Dream bigger. Do bigger.",
-      "Don’t watch the clock; do what it does. Keep going.",
-      "Great things never come from comfort zones.",
-      "Push yourself, because no one else is going to do it for you.",
-      "Believe you can and you're halfway there.",
-      "It always seems impossible until it’s done."
-    ];
-    final random = Random();
-    return quotes[random.nextInt(quotes.length)];
-  }
-
-  /// Updates the state with a new random quote.
-  void setRandomQuote() {
-    final previousState = state as AsyncData<HomeUiState>;
-    final newQuote = getRandomQuote();
-    final newState = previousState.value.copyWith(quote: newQuote);
-    state = AsyncData(newState);
-  }
-
   Future<void> onTimerComplete() async {
     await player.play(
-      AssetSource(Assets.sounds.souTing.replaceFirst('assets/', '')),
+      AssetSource(Assets.sounds.souDone.replaceFirst('assets/', '')),
       volume: 1,
     );
     final previousState = state as AsyncData<HomeUiState>;
+    // what happen if user set new pomodoro settings during running?
+
     final currentPomodoro = previousState.value.pomodoro;
-    final currentType = currentPomodoro.pomodoroType;
+    final currentType = currentPomodoro.currentType;
 
     // Determine next type and update step progress
     PomodoroType nextType;
     if (currentType == PomodoroType.focus) {
       // Mark a focus cycle completed
-      final currentStep = stepProgressController.currentStep;
-      if (currentStep < stepProgressController.totalSteps) {
-        stepProgressController.setCurrentStep(currentStep + 1);
-      }
+
       // Decide between short or long break
       if (stepProgressController.currentStep >=
           stepProgressController.totalSteps) {
@@ -146,18 +125,24 @@ class HomeViewModel extends _$HomeViewModel {
       }
     } else if (currentType == PomodoroType.shortBreak) {
       nextType = PomodoroType.focus;
+      final currentStep = stepProgressController.currentStep;
+      if (currentStep < stepProgressController.totalSteps) {
+        stepProgressController.setCurrentStep(currentStep + 1);
+      }
     } else {
       // Long break finished -> reset cycles
       stepProgressController.setCurrentStep(0);
       nextType = PomodoroType.focus;
     }
 
+    // what happen if user set new pomodoro settings during running?
+
     final updatedPomodoro = Pomodoro(
       focusDuration: currentPomodoro.focusDuration,
       shortBreakDuration: currentPomodoro.shortBreakDuration,
       longBreakDuration: currentPomodoro.longBreakDuration,
       numberOfCycles: currentPomodoro.numberOfCycles,
-      pomodoroType: nextType,
+      currentType: nextType,
     );
 
     if (isAutoAdvanceNext) {

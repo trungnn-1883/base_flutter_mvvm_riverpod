@@ -1,7 +1,7 @@
-import 'package:flutter_mvvm_riverpod/base/common/local/database_provider.dart';
 import 'package:flutter_mvvm_riverpod/constants/database_constants.dart';
+import 'package:flutter_mvvm_riverpod/data/local/database_provider.dart';
+import 'package:flutter_mvvm_riverpod/data/network/remote/api/api_client.dart';
 import 'package:flutter_mvvm_riverpod/model/hero.dart';
-import 'package:flutter_mvvm_riverpod/network/remote/api/api_client.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:sqflite/sqflite.dart';

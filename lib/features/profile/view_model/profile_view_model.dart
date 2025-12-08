@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_mvvm_riverpod/data/repository/repository_impl/profile_repository.dart';
 import 'package:flutter_mvvm_riverpod/extensions/profile_extension.dart';
 import 'package:flutter_mvvm_riverpod/features/authentication/ui/view_model/authentication_view_model.dart';
 import 'package:flutter_mvvm_riverpod/features/profile/state/profile_state.dart';
@@ -13,7 +14,6 @@ import 'package:riverpod_annotation/riverpod_annotation.dart';
 import '../../../../constants/constants.dart';
 import '../../../../extensions/build_context_extension.dart';
 import '../../../../extensions/string_extension.dart';
-import 'package:flutter_mvvm_riverpod/network/remote/repository/repository_impl/profile_repository.dart';
 
 part 'profile_view_model.g.dart';
 

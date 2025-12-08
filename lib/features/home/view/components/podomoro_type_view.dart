@@ -3,7 +3,7 @@ part of '../home_view.dart';
 extension PodomoroTypeView on HomeView {
   Widget _buildPomodoroTypView(WidgetRef ref) {
     final pomodoroType = ref.watch(homeViewModelProvider.select((selector) =>
-        selector.valueOrNull?.pomodoro.pomodoroType ?? PomodoroType.focus));
+        selector.valueOrNull?.pomodoro.currentType ?? PomodoroType.focus));
 
     return Consumer(
       builder: (context, ref, child) {

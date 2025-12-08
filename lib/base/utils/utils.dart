@@ -2,8 +2,8 @@ import 'dart:async';
 
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:easy_localization/easy_localization.dart';
+import 'package:flutter_mvvm_riverpod/data/network/exception/custom_exception.dart';
 import 'package:flutter_mvvm_riverpod/generated/locale_keys.g.dart';
-import 'package:flutter_mvvm_riverpod/network/exception/custom_exception.dart';
 
 class Utils {
   Utils._();

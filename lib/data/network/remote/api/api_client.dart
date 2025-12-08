@@ -1,13 +1,11 @@
 import 'package:dio/dio.dart';
-import 'package:flutter_mvvm_riverpod/network/exception/custom_exception.dart';
-import 'package:flutter_mvvm_riverpod/network/interceptor/error_interceptor.dart';
-import 'package:flutter_mvvm_riverpod/network/interceptor/logging_interceptor.dart';
+import 'package:flutter_mvvm_riverpod/data/network/exception/custom_exception.dart';
+import 'package:flutter_mvvm_riverpod/data/network/interceptor/error_interceptor.dart';
+import 'package:flutter_mvvm_riverpod/data/network/interceptor/logging_interceptor.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
-
 part 'api_client.g.dart';
-
 
 @riverpod
 ApiClient apiClient(Ref ref) {

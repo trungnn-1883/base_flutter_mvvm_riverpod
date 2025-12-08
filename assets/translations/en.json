@@ -101,5 +101,288 @@
 
   "pomodoroStepFocus": "In focus",
   "pomodoroStepShortBreak": "Short break",
-  "pomodoroStepLongBreak": "Long break"
+  "pomodoroStepLongBreak": "Long break",
+
+  "quote": {
+    "monday1": {
+      "morning": "The future depends on what you do today. – Mahatma Gandhi",
+      "afternoon": "Monday afternoon: Reflect on your progress and keep moving forward."
+    },
+    "monday2": {
+      "morning": "Success is not the key to happiness. Happiness is the key to success. – Albert Schweitzer",
+      "afternoon": "Take a deep breath and finish Monday strong."
+    },
+    "monday3": {
+      "morning": "Let your enthusiasm set the tone for the week.",
+      "afternoon": "The only way to do great work is to love what you do. – Steve Jobs"
+    },
+    "monday4": {
+      "morning": "Start your Monday with a positive mindset.",
+      "afternoon": "Success is the sum of small efforts repeated day in and day out. – Robert Collier"
+    },
+    "monday5": {
+      "morning": "The secret of getting ahead is getting started. – Mark Twain",
+      "afternoon": "Stay focused and determined this Monday afternoon."
+    },
+    "monday6": {
+      "morning": "Rise early and make Monday count.",
+      "afternoon": "Review your plans and adjust for success."
+    },
+    "monday7": {
+      "morning": "Let gratitude guide your Monday morning.",
+      "afternoon": "Push through challenges and finish Monday proud."
+    },
+    "monday8": {
+      "morning": "Opportunities don't happen. You create them. – Chris Grosser",
+      "afternoon": "Take time to recharge and reflect this afternoon."
+    },
+    "monday9": {
+      "morning": "Start your week with courage and hope.",
+      "afternoon": "Believe you can and you're halfway there. – Theodore Roosevelt"
+    },
+    "monday10": {
+      "morning": "Let your actions inspire others this Monday.",
+      "afternoon": "End Monday with gratitude and optimism."
+    },
+    "tuesday1": {
+      "morning": "Success is not final, failure is not fatal: It is the courage to continue that counts. – Winston Churchill",
+      "afternoon": "Tuesday afternoon: Stay persistent and focused."
+    },
+    "tuesday2": {
+      "morning": "Let your creativity shine this Tuesday morning.",
+      "afternoon": "Take a moment to appreciate your journey."
+    },
+    "tuesday3": {
+      "morning": "Tuesday is for taking action on your goals.",
+      "afternoon": "The best way to get started is to quit talking and begin doing. – Walt Disney"
+    },
+    "tuesday4": {
+      "morning": "Start Tuesday with a clear mind and open heart.",
+      "afternoon": "Keep your momentum going this afternoon."
+    },
+    "tuesday5": {
+      "morning": "Don't let yesterday take up too much of today. – Will Rogers",
+      "afternoon": "Celebrate your growth and keep striving."
+    },
+    "tuesday6": {
+      "morning": "Let kindness be your guide this Tuesday.",
+      "afternoon": "Push past obstacles and finish strong."
+    },
+    "tuesday7": {
+      "morning": "Tuesday morning: Take time to set new goals.",
+      "afternoon": "Stay motivated and focused on your dreams."
+    },
+    "tuesday8": {
+      "morning": "Find joy in your work this Tuesday morning.",
+      "afternoon": "Tuesday afternoon: Reflect and recharge."
+    },
+    "tuesday9": {
+      "morning": "Let your passion fuel your Tuesday.",
+      "afternoon": "End Tuesday with a sense of accomplishment."
+    },
+    "tuesday10": {
+      "morning": "Be bold and take chances this Tuesday morning.",
+      "afternoon": "Appreciate your efforts and look forward to tomorrow."
+    },
+    "wednesday1": {
+      "morning": "Wednesday morning: You're halfway to your goals.",
+      "afternoon": "Stay strong and positive this Wednesday afternoon."
+    },
+    "wednesday2": {
+      "morning": "Quality is not an act, it is a habit. – Aristotle",
+      "afternoon": "Celebrate your progress and keep moving."
+    },
+    "wednesday3": {
+      "morning": "Midweek is a chance to refocus and recharge.",
+      "afternoon": "Push through and finish Wednesday proud."
+    },
+    "wednesday4": {
+      "morning": "Start Wednesday with gratitude and hope.",
+      "afternoon": "Success is walking from failure to failure with no loss of enthusiasm. – Winston Churchill"
+    },
+    "wednesday5": {
+      "morning": "The harder you work for something, the greater you'll feel when you achieve it.",
+      "afternoon": "Take time to appreciate your achievements."
+    },
+    "wednesday6": {
+      "morning": "Wednesday morning: Embrace new challenges.",
+      "afternoon": "Stay motivated and finish the day strong."
+    },
+    "wednesday7": {
+      "morning": "Find inspiration in your work this Wednesday.",
+      "afternoon": "Celebrate small victories and keep going."
+    },
+    "wednesday8": {
+      "morning": "Don't be afraid to give up the good to go for the great. – John D. Rockefeller",
+      "afternoon": "Push past doubts and believe in yourself."
+    },
+    "wednesday9": {
+      "morning": "Wednesday morning: Take time for self-care.",
+      "afternoon": "Reflect on your growth and plan for tomorrow."
+    },
+    "wednesday10": {
+      "morning": "Start Wednesday with a smile and positive energy.",
+      "afternoon": "End the day with gratitude and peace."
+    },
+    "thursday1": {
+      "morning": "Thursday morning: Stay focused and keep moving forward.",
+      "afternoon": "Finish the day strong this Thursday afternoon."
+    },
+    "thursday2": {
+      "morning": "Success is not in what you have, but who you are. – Bo Bennett",
+      "afternoon": "Take time to celebrate your progress."
+    },
+    "thursday3": {
+      "morning": "Thursday is for setting new goals.",
+      "afternoon": "Reflect on your achievements and plan ahead."
+    },
+    "thursday4": {
+      "morning": "Start Thursday with hope and determination.",
+      "afternoon": "Push through challenges and finish proud."
+    },
+    "thursday5": {
+      "morning": "The only limit to our realization of tomorrow will be our doubts of today. – Franklin D. Roosevelt",
+      "afternoon": "Take a moment to appreciate your journey."
+    },
+    "thursday6": {
+      "morning": "Thursday morning: Seek inspiration in small things.",
+      "afternoon": "Celebrate your growth and keep striving."
+    },
+    "thursday7": {
+      "morning": "Let kindness be your guide this Thursday.",
+      "afternoon": "Push past obstacles and finish strong."
+    },
+    "thursday8": {
+      "morning": "Thursday morning: Take time to set new goals.",
+      "afternoon": "Stay motivated and focused on your dreams."
+    },
+    "thursday9": {
+      "morning": "Find joy in your work this Thursday morning.",
+      "afternoon": "Thursday afternoon: Reflect and recharge."
+    },
+    "thursday10": {
+      "morning": "Let your passion fuel your Thursday.",
+      "afternoon": "End Thursday with a sense of accomplishment."
+    },
+    "friday1": {
+      "morning": "Friday morning: Celebrate your progress.",
+      "afternoon": "End the week on a high note this Friday afternoon."
+    },
+    "friday2": {
+      "morning": "Let your enthusiasm set the tone for Friday.",
+      "afternoon": "Take a deep breath and finish Friday strong."
+    },
+    "friday3": {
+      "morning": "Start Friday with a positive mindset.",
+      "afternoon": "The best preparation for tomorrow is doing your best today. – H. Jackson Brown, Jr."
+    },
+    "friday4": {
+      "morning": "Every Friday is a fresh start for new achievements.",
+      "afternoon": "Stay focused and determined this Friday afternoon."
+    },
+    "friday5": {
+      "morning": "Rise early and make Friday count.",
+      "afternoon": "Success is not measured by money or power, but by happiness and peace."
+    },
+    "friday6": {
+      "morning": "Let gratitude guide your Friday morning.",
+      "afternoon": "Push through challenges and finish Friday proud."
+    },
+    "friday7": {
+      "morning": "Friday morning: Opportunity awaits those who seek it.",
+      "afternoon": "Take time to recharge and reflect this afternoon."
+    },
+    "friday8": {
+      "morning": "Happiness is not something ready made. It comes from your own actions. – Dalai Lama",
+      "afternoon": "Friday afternoon: Take one step closer to your dreams."
+    },
+    "friday9": {
+      "morning": "Let your actions inspire others this Friday.",
+      "afternoon": "End Friday with gratitude and optimism."
+    },
+    "friday10": {
+      "morning": "Friday morning: Set your intentions for a restful weekend.",
+      "afternoon": "Friday afternoon: Reflect on your week and celebrate your wins."
+    },
+    "saturday1": {
+      "morning": "Saturday morning: Relax and recharge.",
+      "afternoon": "Enjoy the little things this Saturday afternoon."
+    },
+    "saturday2": {
+      "morning": "Let your creativity flow this Saturday.",
+      "afternoon": "Take time to appreciate your journey."
+    },
+    "saturday3": {
+      "morning": "Start Saturday with a grateful heart.",
+      "afternoon": "The purpose of our lives is to be happy. – Dalai Lama"
+    },
+    "saturday4": {
+      "morning": "Find joy in your hobbies this Saturday morning.",
+      "afternoon": "Saturday afternoon: Reflect and recharge."
+    },
+    "saturday5": {
+      "morning": "Let your passion guide your Saturday.",
+      "afternoon": "Enjoy the little things, for one day you may look back and realize they were the big things. – Robert Brault"
+    },
+    "saturday6": {
+      "morning": "Saturday morning: Take time for self-care.",
+      "afternoon": "Reflect on your growth and plan for tomorrow."
+    },
+    "saturday7": {
+      "morning": "Start Saturday with a smile and positive energy.",
+      "afternoon": "End the day with gratitude and peace."
+    },
+    "saturday8": {
+      "morning": "Let your ambition drive you this Saturday.",
+      "afternoon": "Take time to celebrate your progress."
+    },
+    "saturday9": {
+      "morning": "Saturday is for setting new goals.",
+      "afternoon": "Reflect on your achievements and plan ahead."
+    },
+    "saturday10": {
+      "morning": "Start Saturday with hope and determination.",
+      "afternoon": "Push through challenges and finish proud."
+    },
+    "sunday1": {
+      "morning": "Sunday morning: Reflect and reset for the week ahead.",
+      "afternoon": "Find peace and prepare for greatness this Sunday afternoon."
+    },
+    "sunday2": {
+      "morning": "Let your spirit rest this Sunday morning.",
+      "afternoon": "Take time to appreciate your journey."
+    },
+    "sunday3": {
+      "morning": "Start Sunday with gratitude and hope.",
+      "afternoon": "Push through and finish Sunday proud."
+    },
+    "sunday4": {
+      "morning": "Let your energy carry you through Sunday.",
+      "afternoon": "Gratitude turns what we have into enough. – Aesop"
+    },
+    "sunday5": {
+      "morning": "Sunday morning: Embrace new challenges.",
+      "afternoon": "Sunday clears away the rust of the whole week. – Joseph Addison"
+    },
+    "sunday6": {
+      "morning": "Find inspiration in your rest this Sunday.",
+      "afternoon": "Celebrate small victories and keep going."
+    },
+    "sunday7": {
+      "morning": "Let your dreams guide your Sunday morning.",
+      "afternoon": "Push past doubts and believe in yourself."
+    },
+    "sunday8": {
+      "morning": "Sunday morning: Take time for self-care.",
+      "afternoon": "Reflect on your growth and plan for tomorrow."
+    },
+    "sunday9": {
+      "morning": "Start Sunday with a smile and positive energy.",
+      "afternoon": "End the day with gratitude and peace."
+    },
+    "sunday10": {
+      "morning": "Let your ambition drive you this Sunday.",
+      "afternoon": "Take time to celebrate your progress."
+    }
+  }
 }

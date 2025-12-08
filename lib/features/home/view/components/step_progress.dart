@@ -9,12 +9,25 @@ extension PomodoroStepProgress on HomeView {
       highlightOptions: StepProgressHighlightOptions.highlightCompletedNodes,
       margin: const EdgeInsets.symmetric(horizontal: 64),
       totalSteps: 4,
-      controller: ref.read(homeViewModelProvider.notifier).stepProgressController,
-      theme: const StepProgressThemeData(
+      controller:
+          ref.read(homeViewModelProvider.notifier).stepProgressController,
+      theme: StepProgressThemeData(
         activeForegroundColor: Colors.lightBlueAccent,
-        stepNodeStyle: StepNodeStyle(),
+        stepNodeStyle: StepNodeStyle(
+          activeIcon: Container(
+            decoration: BoxDecoration(
+              color: Colors.lightBlueAccent,
+              shape: BoxShape.circle,
+            ),
+          ),
+          icon: Container(
+            decoration: BoxDecoration(
+              color: Colors.white24,
+              shape: BoxShape.circle,
+            ),
+          ),
+        ),
       ),
     );
   }
 }
-

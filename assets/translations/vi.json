@@ -11,7 +11,6 @@
   "validatorInvalidEmailFormat": "Email không hợp lệ",
   "validatorInvalidPhoneFormat": "Số điện thoại không hợp lệ",
   "validatorPasswordNotMatch": "Mật khẩu không trùng khớp!",
-
   "welcome": "Xin chào đến với Flutter MVVM Riverpod!",
   "alreadyHaveAccount": "Đã có tài khoản?",
   "or": "hoặc",
@@ -26,21 +25,17 @@
   "signInAgreementPrefix": "Bằng việc đăng nhập, bạn đồng ý với ",
   "signInAgreementMiddle": "\nvà ",
   "signInAgreementSuffix": " của chúng tôi",
-
   "otpVerification": "Xác thực OTP",
   "otpEnterTitle": "Chúng tôi đã gửi mã OTP gồm 6 chữ số tới email của bạn",
   "otpEnterDescription": "Bạn có thể nhập mã OTP ở đây hoặc nhấn vào nút trong email.",
   "didNotReceiveOtp": "Không nhận được mã OTP?",
   "tryAgainAfter": "Bạn có thể gửi một link đăng nhập khác sau {} giây.",
   "resendOtp": "Gửi lại OTP",
-
   "menuHero": "Hero",
   "menuProfile": "Hồ sơ",
-
   "goodMorning": "Chào buổi sáng",
   "goodAfternoon": "Chào buổi chiều",
   "goodEvening": "Chào buổi tối",
-
   "general": "Tổng quan",
   "preferences": "Tham chiếu",
   "dangerousZone": "Khác",
@@ -65,7 +60,6 @@
   "deleteAccount": "Xoá tài khoản",
   "deleteAccountTitle": "Xác nhận xoá tài khoản",
   "deleteAccountMessage": "Bạn có chắc chắn muốn xoá tài khoản?",
-
   "premium": "Premium",
   "premiumLifetime": "Premium Vĩnh Viễn",
   "until": "đến",
@@ -98,8 +92,289 @@
   "restorePurchasesSuccess": "Đã khôi phục thành công các gói đã mua",
   "noActivePurchases": "Không tìm thấy gói đã mua",
   "restorePurchasesError": "Không thể khôi phục các gói đã mua",
-
   "pomodoroStepFocus": "Tập trung",
   "pomodoroStepShortBreak": "Nghỉ ngắn",
-  "pomodoroStepLongBreak": "Nghỉ dài"
+  "pomodoroStepLongBreak": "Nghỉ dài",
+  "quote": {
+    "monday1": {
+      "morning": "Tương lai phụ thuộc vào những gì bạn làm hôm nay. – Mahatma Gandhi",
+      "afternoon": "Chiều thứ Hai: Nhìn lại tiến trình và tiếp tục cố gắng."
+    },
+    "monday2": {
+      "morning": "Thành công không phải là chìa khóa của hạnh phúc. Hạnh phúc mới là chìa khóa của thành công. – Albert Schweitzer",
+      "afternoon": "Hít thở sâu và kết thúc thứ Hai thật mạnh mẽ."
+    },
+    "monday3": {
+      "morning": "Hãy để sự nhiệt huyết dẫn dắt tuần mới.",
+      "afternoon": "Cách duy nhất để làm việc tuyệt vời là yêu những gì bạn làm. – Steve Jobs"
+    },
+    "monday4": {
+      "morning": "Khởi đầu thứ Hai với tư duy tích cực.",
+      "afternoon": "Thành công là tổng hợp của những nỗ lực nhỏ lặp đi lặp lại mỗi ngày. – Robert Collier"
+    },
+    "monday5": {
+      "morning": "Bí quyết để tiến lên phía trước là bắt đầu. – Mark Twain",
+      "afternoon": "Giữ vững sự tập trung và quyết tâm vào chiều thứ Hai."
+    },
+    "monday6": {
+      "morning": "Thức dậy sớm và làm cho thứ Hai trở nên ý nghĩa.",
+      "afternoon": "Xem lại kế hoạch và điều chỉnh để thành công."
+    },
+    "monday7": {
+      "morning": "Để lòng biết ơn dẫn đường cho sáng thứ Hai.",
+      "afternoon": "Vượt qua thử thách và kết thúc thứ Hai đầy tự hào."
+    },
+    "monday8": {
+      "morning": "Cơ hội không tự đến. Bạn tạo ra chúng. – Chris Grosser",
+      "afternoon": "Dành thời gian nạp lại năng lượng và suy ngẫm."
+    },
+    "monday9": {
+      "morning": "Khởi đầu tuần mới với sự can đảm và hy vọng.",
+      "afternoon": "Hãy tin rằng bạn có thể và bạn đã đi được nửa chặng đường. – Theodore Roosevelt"
+    },
+    "monday10": {
+      "morning": "Hãy để hành động của bạn truyền cảm hứng cho người khác vào thứ Hai.",
+      "afternoon": "Kết thúc thứ Hai với lòng biết ơn và lạc quan."
+    },
+    "tuesday1": {
+      "morning": "Thành công không phải là cuối cùng, thất bại không phải là chết người: Điều quan trọng là sự can đảm để tiếp tục. – Winston Churchill",
+      "afternoon": "Chiều thứ Ba: Kiên trì và tập trung."
+    },
+    "tuesday2": {
+      "morning": "Hãy để sự sáng tạo tỏa sáng vào sáng thứ Ba.",
+      "afternoon": "Dành một chút thời gian để trân trọng hành trình của bạn."
+    },
+    "tuesday3": {
+      "morning": "Thứ Ba là ngày hành động cho mục tiêu.",
+      "afternoon": "Cách tốt nhất để bắt đầu là ngừng nói và bắt đầu làm. – Walt Disney"
+    },
+    "tuesday4": {
+      "morning": "Khởi đầu thứ Ba với tâm trí sáng suốt và trái tim rộng mở.",
+      "afternoon": "Giữ vững động lực vào chiều hôm nay."
+    },
+    "tuesday5": {
+      "morning": "Đừng để ngày hôm qua chiếm quá nhiều thời gian của hôm nay. – Will Rogers",
+      "afternoon": "Ăn mừng sự trưởng thành và tiếp tục cố gắng."
+    },
+    "tuesday6": {
+      "morning": "Để lòng tốt dẫn đường cho bạn vào thứ Ba.",
+      "afternoon": "Vượt qua mọi trở ngại và kết thúc mạnh mẽ."
+    },
+    "tuesday7": {
+      "morning": "Sáng thứ Ba: Dành thời gian đặt ra mục tiêu mới.",
+      "afternoon": "Giữ động lực và tập trung vào ước mơ."
+    },
+    "tuesday8": {
+      "morning": "Tìm niềm vui trong công việc vào sáng thứ Ba.",
+      "afternoon": "Chiều thứ Ba: Suy ngẫm và nạp lại năng lượng."
+    },
+    "tuesday9": {
+      "morning": "Để đam mê dẫn dắt thứ Ba của bạn.",
+      "afternoon": "Kết thúc thứ Ba với cảm giác hoàn thành."
+    },
+    "tuesday10": {
+      "morning": "Hãy dũng cảm và thử thách bản thân vào sáng thứ Ba.",
+      "afternoon": "Trân trọng nỗ lực và hướng về ngày mai."
+    },
+    "wednesday1": {
+      "morning": "Sáng thứ Tư: Bạn đã đi được nửa chặng đường đến mục tiêu.",
+      "afternoon": "Giữ vững sự mạnh mẽ và lạc quan vào chiều thứ Tư."
+    },
+    "wednesday2": {
+      "morning": "Chất lượng không phải là hành động, nó là thói quen. – Aristotle",
+      "afternoon": "Ăn mừng tiến trình và tiếp tục tiến lên."
+    },
+    "wednesday3": {
+      "morning": "Giữa tuần là cơ hội để tập trung lại và nạp năng lượng.",
+      "afternoon": "Vượt qua và kết thúc thứ Tư đầy tự hào."
+    },
+    "wednesday4": {
+      "morning": "Khởi đầu thứ Tư với lòng biết ơn và hy vọng.",
+      "afternoon": "Thành công là đi từ thất bại này đến thất bại khác mà không mất đi sự nhiệt tình. – Winston Churchill"
+    },
+    "wednesday5": {
+      "morning": "Bạn càng làm việc chăm chỉ cho điều gì đó, bạn sẽ càng cảm thấy tuyệt vời khi đạt được nó.",
+      "afternoon": "Dành thời gian trân trọng thành tựu của mình."
+    },
+    "wednesday6": {
+      "morning": "Sáng thứ Tư: Đón nhận thử thách mới.",
+      "afternoon": "Giữ động lực và kết thúc ngày thật mạnh mẽ."
+    },
+    "wednesday7": {
+      "morning": "Tìm cảm hứng trong công việc vào thứ Tư.",
+      "afternoon": "Ăn mừng những chiến thắng nhỏ và tiếp tục cố gắng."
+    },
+    "wednesday8": {
+      "morning": "Đừng ngại từ bỏ điều tốt để hướng tới điều tuyệt vời. – John D. Rockefeller",
+      "afternoon": "Vượt qua nghi ngờ và tin vào bản thân."
+    },
+    "wednesday9": {
+      "morning": "Sáng thứ Tư: Dành thời gian chăm sóc bản thân.",
+      "afternoon": "Suy ngẫm về sự trưởng thành và lên kế hoạch cho ngày mai."
+    },
+    "wednesday10": {
+      "morning": "Khởi đầu thứ Tư với nụ cười và năng lượng tích cực.",
+      "afternoon": "Kết thúc ngày với lòng biết ơn và bình yên."
+    },
+    "thursday1": {
+      "morning": "Sáng thứ Năm: Giữ sự tập trung và tiếp tục tiến lên.",
+      "afternoon": "Kết thúc ngày thật mạnh mẽ vào chiều thứ Năm."
+    },
+    "thursday2": {
+      "morning": "Thành công không nằm ở những gì bạn có, mà ở con người bạn. – Bo Bennett",
+      "afternoon": "Dành thời gian ăn mừng tiến trình của mình."
+    },
+    "thursday3": {
+      "morning": "Thứ Năm là ngày đặt ra mục tiêu mới.",
+      "afternoon": "Suy ngẫm về thành tựu và lên kế hoạch tiếp theo."
+    },
+    "thursday4": {
+      "morning": "Khởi đầu thứ Năm với hy vọng và quyết tâm.",
+      "afternoon": "Vượt qua thử thách và kết thúc đầy tự hào."
+    },
+    "thursday5": {
+      "morning": "Giới hạn duy nhất cho sự thành công ngày mai là những nghi ngờ hôm nay. – Franklin D. Roosevelt",
+      "afternoon": "Dành một chút thời gian để trân trọng hành trình của bạn."
+    },
+    "thursday6": {
+      "morning": "Sáng thứ Năm: Tìm cảm hứng từ những điều nhỏ bé.",
+      "afternoon": "Ăn mừng sự trưởng thành và tiếp tục cố gắng."
+    },
+    "thursday7": {
+      "morning": "Để lòng tốt dẫn đường cho bạn vào thứ Năm.",
+      "afternoon": "Vượt qua mọi trở ngại và kết thúc mạnh mẽ."
+    },
+    "thursday8": {
+      "morning": "Sáng thứ Năm: Dành thời gian đặt ra mục tiêu mới.",
+      "afternoon": "Giữ động lực và tập trung vào ước mơ."
+    },
+    "thursday9": {
+      "morning": "Tìm niềm vui trong công việc vào sáng thứ Năm.",
+      "afternoon": "Chiều thứ Năm: Suy ngẫm và nạp lại năng lượng."
+    },
+    "thursday10": {
+      "morning": "Để đam mê dẫn dắt thứ Năm của bạn.",
+      "afternoon": "Kết thúc thứ Năm với cảm giác hoàn thành."
+    },
+    "friday1": {
+      "morning": "Sáng thứ Sáu: Hãy ăn mừng tiến bộ của bạn.",
+      "afternoon": "Kết thúc tuần với một dấu ấn tốt đẹp vào chiều thứ Sáu."
+    },
+    "friday2": {
+      "morning": "Hãy để sự nhiệt huyết dẫn dắt thứ Sáu.",
+      "afternoon": "Hít thở sâu và kết thúc thứ Sáu thật mạnh mẽ."
+    },
+    "friday3": {
+      "morning": "Khởi đầu thứ Sáu với tư duy tích cực.",
+      "afternoon": "Sự chuẩn bị tốt nhất cho ngày mai là làm tốt nhất hôm nay. – H. Jackson Brown, Jr."
+    },
+    "friday4": {
+      "morning": "Mỗi thứ Sáu là một khởi đầu mới cho thành tựu mới.",
+      "afternoon": "Giữ vững sự tập trung và quyết tâm vào chiều thứ Sáu."
+    },
+    "friday5": {
+      "morning": "Thức dậy sớm và làm cho thứ Sáu trở nên ý nghĩa.",
+      "afternoon": "Thành công không được đo bằng tiền bạc hay quyền lực, mà bằng hạnh phúc và sự bình yên."
+    },
+    "friday6": {
+      "morning": "Để lòng biết ơn dẫn đường cho sáng thứ Sáu.",
+      "afternoon": "Vượt qua thử thách và kết thúc thứ Sáu đầy tự hào."
+    },
+    "friday7": {
+      "morning": "Sáng thứ Sáu: Cơ hội dành cho người biết tìm kiếm.",
+      "afternoon": "Dành thời gian nạp lại năng lượng và suy ngẫm."
+    },
+    "friday8": {
+      "morning": "Hạnh phúc không phải là thứ có sẵn. Nó đến từ hành động của chính bạn. – Dalai Lama",
+      "afternoon": "Chiều thứ Sáu: Tiến gần hơn đến ước mơ của bạn."
+    },
+    "friday9": {
+      "morning": "Hãy để hành động của bạn truyền cảm hứng cho người khác vào thứ Sáu.",
+      "afternoon": "Kết thúc thứ Sáu với lòng biết ơn và lạc quan."
+    },
+    "friday10": {
+      "morning": "Sáng thứ Sáu: Đặt mục tiêu cho một cuối tuần thư giãn.",
+      "afternoon": "Chiều thứ Sáu: Suy ngẫm về tuần qua và ăn mừng thành công."
+    },
+    "saturday1": {
+      "morning": "Sáng thứ Bảy: Thư giãn và nạp lại năng lượng.",
+      "afternoon": "Hãy tận hưởng những điều nhỏ bé vào chiều thứ Bảy."
+    },
+    "saturday2": {
+      "morning": "Để sự sáng tạo tuôn trào vào thứ Bảy.",
+      "afternoon": "Dành thời gian trân trọng hành trình của bạn."
+    },
+    "saturday3": {
+      "morning": "Khởi đầu thứ Bảy với trái tim biết ơn.",
+      "afternoon": "Mục đích của cuộc sống là để hạnh phúc. – Dalai Lama"
+    },
+    "saturday4": {
+      "morning": "Tìm niềm vui trong sở thích vào sáng thứ Bảy.",
+      "afternoon": "Chiều thứ Bảy: Suy ngẫm và nạp lại năng lượng."
+    },
+    "saturday5": {
+      "morning": "Để đam mê dẫn dắt thứ Bảy của bạn.",
+      "afternoon": "Hãy tận hưởng những điều nhỏ bé, vì một ngày nào đó bạn sẽ nhận ra chúng là những điều lớn lao. – Robert Brault"
+    },
+    "saturday6": {
+      "morning": "Sáng thứ Bảy: Dành thời gian chăm sóc bản thân.",
+      "afternoon": "Suy ngẫm về sự trưởng thành và lên kế hoạch cho ngày mai."
+    },
+    "saturday7": {
+      "morning": "Khởi đầu thứ Bảy với nụ cười và năng lượng tích cực.",
+      "afternoon": "Kết thúc ngày với lòng biết ơn và bình yên."
+    },
+    "saturday8": {
+      "morning": "Để tham vọng dẫn dắt bạn vào thứ Bảy.",
+      "afternoon": "Dành thời gian ăn mừng tiến trình của mình."
+    },
+    "saturday9": {
+      "morning": "Thứ Bảy là ngày đặt ra mục tiêu mới.",
+      "afternoon": "Suy ngẫm về thành tựu và lên kế hoạch tiếp theo."
+    },
+    "saturday10": {
+      "morning": "Khởi đầu thứ Bảy với hy vọng và quyết tâm.",
+      "afternoon": "Vượt qua thử thách và kết thúc đầy tự hào."
+    },
+    "sunday1": {
+      "morning": "Sáng Chủ Nhật: Suy ngẫm và làm mới cho tuần mới.",
+      "afternoon": "Tìm sự bình yên và chuẩn bị cho những điều tuyệt vời vào chiều Chủ Nhật."
+    },
+    "sunday2": {
+      "morning": "Để tâm hồn bạn nghỉ ngơi vào sáng Chủ Nhật.",
+      "afternoon": "Dành thời gian trân trọng hành trình của bạn."
+    },
+    "sunday3": {
+      "morning": "Khởi đầu Chủ Nhật với lòng biết ơn và hy vọng.",
+      "afternoon": "Vượt qua và kết thúc Chủ Nhật đầy tự hào."
+    },
+    "sunday4": {
+      "morning": "Để năng lượng đưa bạn qua ngày Chủ Nhật.",
+      "afternoon": "Lòng biết ơn biến những gì chúng ta có thành đủ đầy. – Aesop"
+    },
+    "sunday5": {
+      "morning": "Sáng Chủ Nhật: Đón nhận thử thách mới.",
+      "afternoon": "Chủ Nhật xóa đi mọi mệt mỏi của cả tuần. – Joseph Addison"
+    },
+    "sunday6": {
+      "morning": "Tìm cảm hứng trong sự nghỉ ngơi vào Chủ Nhật.",
+      "afternoon": "Ăn mừng những chiến thắng nhỏ và tiếp tục cố gắng."
+    },
+    "sunday7": {
+      "morning": "Để ước mơ dẫn dắt sáng Chủ Nhật của bạn.",
+      "afternoon": "Vượt qua nghi ngờ và tin vào bản thân."
+    },
+    "sunday8": {
+      "morning": "Sáng Chủ Nhật: Dành thời gian chăm sóc bản thân.",
+      "afternoon": "Suy ngẫm về sự trưởng thành và lên kế hoạch cho ngày mai."
+    },
+    "sunday9": {
+      "morning": "Khởi đầu Chủ Nhật với nụ cười và năng lượng tích cực.",
+      "afternoon": "Kết thúc ngày với lòng biết ơn và bình yên."
+    },
+    "sunday10": {
+      "morning": "Để tham vọng dẫn dắt bạn vào Chủ Nhật.",
+      "afternoon": "Dành thời gian ăn mừng tiến trình của mình."
+    }
+  }
 }

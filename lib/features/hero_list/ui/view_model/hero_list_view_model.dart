@@ -1,4 +1,4 @@
-import 'package:flutter_mvvm_riverpod/network/remote/repository/repository_impl/hero_list_repository.dart';
+import 'package:flutter_mvvm_riverpod/data/repository/repository_impl/hero_list_repository.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:uuid/uuid.dart';
 
