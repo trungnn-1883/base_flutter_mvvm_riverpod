@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mvvm_riverpod/base/common/ui/widgets/loading.dart';
-import 'package:flutter_mvvm_riverpod/network/remote/repository/repository_impl/authentication_repository.dart';
+import 'package:flutter_mvvm_riverpod/data/repository/repository_impl/authentication_repository.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 

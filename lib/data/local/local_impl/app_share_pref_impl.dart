@@ -1,4 +1,7 @@
-import 'package:flutter_mvvm_riverpod/base/common/local/app_share_pref.dart';
+import 'dart:convert';
+
+import 'package:flutter_mvvm_riverpod/data/local/app_share_pref.dart';
+import 'package:flutter_mvvm_riverpod/model/pomodoro.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class AppSharePrefImpl extends AppSharePref {
@@ -14,6 +17,9 @@ class AppSharePrefImpl extends AppSharePref {
   final String _isAppTutorialShownKey = 'isAppTutorialShown';
   final String _preferredLanguageCodeKey = 'preferredLanguageCode';
   final String _isFirstLaunchKey = 'isFirstLaunch';
+  final String _userNameKey = 'userName';
+  final String _randomQuoteKey = 'randomQuote';
+  final String _pomodoroKey = 'pomodoro';
 
   Future<void> _setString(String key, String value) async {
     final prefs = await SharedPreferences.getInstance();
@@ -75,5 +81,38 @@ class AppSharePrefImpl extends AppSharePref {
   @override
   Future<void> setFirstLaunch(bool isFirstLaunch) async {
     await _setBool(_isFirstLaunchKey, isFirstLaunch);
+  }
+
+  @override
+  Future<String?> getUserName() async {
+    return await _getString(_userNameKey);
+  }
+
+  @override
+  Future<void> setUserName(String userName) async {
+    await _setString(_userNameKey, userName);
+  }
+
+  @override
+  Future<String?> getRandomQuote() async {
+    return await _getString(_randomQuoteKey);
+  }
+
+  @override
+  Future<void> setRandomQuote(String quote) async {
+    await _setString(_randomQuoteKey, quote);
+  }
+
+  @override
+  Future<Pomodoro?> getPomodoro() async {
+    final jsonStr = await _getString(_pomodoroKey);
+    if (jsonStr == null || jsonStr.isEmpty) return null;
+    return Pomodoro.fromJson(jsonDecode(jsonStr));
+  }
+
+  @override
+  Future<void> setPomodoro(Pomodoro pomodoro) async {
+    final jsonStr = jsonEncode(pomodoro.toJson());
+    await _setString(_pomodoroKey, jsonStr);
   }
 }

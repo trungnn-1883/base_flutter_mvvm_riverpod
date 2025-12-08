@@ -1,3 +1,5 @@
+import 'package:flutter_mvvm_riverpod/model/pomodoro.dart';
+
 abstract class AppSharePref {
   /// Sets whether the app tutorial has been shown.
   ///
@@ -35,4 +37,22 @@ abstract class AppSharePref {
   /// // @param isFirstLaunch A boolean indicating if this is the first launch (true) or not (false).
   /// @return A Future that completes when the operation is finished.
   Future<void> setFirstLaunch(bool isFirstLaunch);
+
+  /// Gets the stored username.
+  Future<String?> getUserName();
+
+  /// Sets the username.
+  Future<void> setUserName(String userName);
+
+  /// Gets the stored random quote.
+  Future<String?> getRandomQuote();
+
+  /// Sets the random quote.
+  Future<void> setRandomQuote(String quote);
+
+  /// Gets the stored Pomodoro object.
+  Future<Pomodoro?> getPomodoro();
+
+  /// Sets the Pomodoro object.
+  Future<void> setPomodoro(Pomodoro pomodoro);
 }

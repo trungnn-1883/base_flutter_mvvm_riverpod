@@ -1,4 +1,4 @@
-import 'package:flutter_mvvm_riverpod/base/common/local/local_impl/app_share_pref_impl.dart';
+import 'package:flutter_mvvm_riverpod/data/local/local_impl/app_share_pref_impl.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 

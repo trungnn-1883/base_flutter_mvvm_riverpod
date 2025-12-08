@@ -1,5 +1,5 @@
 import 'package:flutter_mvvm_riverpod/features/home/view_model/home_view_model.dart';
-import 'package:flutter_mvvm_riverpod/model/Pomodoro.dart';
+import 'package:flutter_mvvm_riverpod/model/pomodoro.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 part 'home_ui_state.freezed.dart';
 

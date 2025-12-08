@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
-import 'package:flutter_mvvm_riverpod/network/builder/dio_builder.dart';
-import 'package:flutter_mvvm_riverpod/network/remote/api/app_api.dart';
+import 'package:flutter_mvvm_riverpod/data/network/builder/dio_builder.dart';
+import 'package:flutter_mvvm_riverpod/data/network/remote/api/app_api.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 

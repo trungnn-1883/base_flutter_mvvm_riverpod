@@ -1,9 +1,9 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mvvm_riverpod/constants/constants.dart';
+import 'package:flutter_mvvm_riverpod/data/repository/repository_impl/authentication_repository.dart';
 import 'package:flutter_mvvm_riverpod/features/profile/view_model/profile_view_model.dart';
 import 'package:flutter_mvvm_riverpod/generated/locale_keys.g.dart';
-import 'package:flutter_mvvm_riverpod/network/remote/repository/repository_impl/authentication_repository.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 

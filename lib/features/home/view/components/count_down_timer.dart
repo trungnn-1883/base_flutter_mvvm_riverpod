@@ -2,9 +2,14 @@ part of '../home_view.dart';
 
 extension PomodoroCountdown on HomeView {
   Widget _buildCircularCountdown(WidgetRef ref) {
+    final pomodoro =
+        ref.watch(homeViewModelProvider.select((vm) => vm.valueOrNull));
+    if (pomodoro == null) {
+      return const SizedBox.shrink();
+    }
     return Center(
       child: CircularCountDownTimer(
-        duration: 200,
+        duration: pomodoro.pomodoro.focusDuration * 60,
         initialDuration: 0,
         controller:
             ref.read(homeViewModelProvider.notifier).countDownController,

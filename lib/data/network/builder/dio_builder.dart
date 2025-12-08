@@ -1,7 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
-import 'package:flutter_mvvm_riverpod/network/interceptor/error_interceptor.dart';
-import 'package:flutter_mvvm_riverpod/network/interceptor/logging_interceptor.dart';
+import 'package:flutter_mvvm_riverpod/data/network/interceptor/error_interceptor.dart';
+import 'package:flutter_mvvm_riverpod/data/network/interceptor/logging_interceptor.dart';
 
 class DioBuilder extends DioMixin {
   final String baseUrl = 'https://api.example.com/';
